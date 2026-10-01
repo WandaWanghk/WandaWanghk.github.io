@@ -31,7 +31,7 @@ author_profile: true
 
 ## Working Papers
 
-**When Deposits Fund Speculation: China's 1910 Financial Crisis and the Demand for Safeguards**
+**Financial Crisis and Political Change: China in 1910**
 <br>with Chen Lin and Chicheng Ma
 
 **Bonds of Love: Patriotism and the Rise of Modern Banks**
@@ -40,8 +40,5 @@ author_profile: true
 ---
 
 ## Work in Progress
-
-**Finance and Innovation in the Long Run**
-<br>with Chen Lin and Chicheng Ma
 
 **Regulatory Leakage and Banking Crisis in Hong Kong**
