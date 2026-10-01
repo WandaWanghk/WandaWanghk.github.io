@@ -6,7 +6,7 @@ name: "Wanda Wang"
 description: "Ph.D. Candidate in Finance at HKU Business School. Research on historical financial development, political economy, and long-run development."
 url: "https://WandaWanghk.github.io"  # ← 替换成你的 GitHub 用户名
 baseurl: ""
-repository: "WandaWanghk/WandaWanghk.github.io"  # ← 同上
+repository: "WandaWanghk/WandaWanghk.github.io"  # ← 同上 
 
 # Site Author
 author:
