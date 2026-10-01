@@ -19,4 +19,19 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
+<style>
+body {
+  background-image: url('/images/background.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* 让内容区域半透明白底，保证文字可读 */
+.page__content, .sidebar, .masthead {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+</style>
+
 <!-- end custom head snippets -->
