@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -7,58 +7,30 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+You can download my full CV [here](/files/CV_Wanda_Wang.pdf).
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- **Ph.D. in Finance**, University of Hong Kong, 2021–2027
+- **Visiting Ph.D. Student in Economics**, University of Warwick, Apr–Aug 2025
+- **B.Econ.&Fin., First Class Honours**, University of Hong Kong, 2015–2020
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Awards
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- FBE Ph.D. Entrance Scholarship, HKU Business School, 2021
+- Postgraduate Scholarship, University of Hong Kong, 2021
+- Tsang Kei Yung Prize in Chinese Literature, University of Hong Kong, 2019
+- C.V. Starr Scholarship, University of Hong Kong, 2018
+- Dean's Honours List, University of Hong Kong, 2017–2019
+- Tsui Ying Chun Prize in Chinese Literature, University of Hong Kong, 2017
+- HKU Foundation Entrance Scholarship, University of Hong Kong, 2015–2018
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Skills
+
+- **Programming:** Stata, Python, LaTeX, R
+- **Research Tools:** ArcGIS, QGIS; computational text analysis and AI-assisted research workflows
+- **Languages:** English (fluent), Mandarin (native), Cantonese (fluent)
+
+## Referee Services
+
+The Economic Journal, Journal of Economic Behavior & Organization, Economic Modelling, European Review of Economic History, and Economics & Human Biology.
