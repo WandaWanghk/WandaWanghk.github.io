@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a Ph.D. candidate in Finance at HKU Business School, The University of Hong Kong. I study the historical origins of financial development, political economy, and long-run economic change, with a focus on modern China. My research combines newly digitized archival data with econometric methods to understand how institutions, trade, and politics have shaped financial systems over time.
+Welcome! I am a Ph.D. candidate in Finance at HKU Business School, The University of Hong Kong. I study the historical origins of financial development, political economy, and long-run economic change, with a focus on China. My research combines newly digitized archival data with econometric methods to understand how institutions, trade, and politics have shaped financial systems over time.
 
 I will be on the **2026–2027 academic job market**.
 
