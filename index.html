@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wanda Wang</title>
+<meta name="description" content="Wanda Wang — Ph.D. Candidate in Finance at HKU Business School. Research on historical financial development, political economy, and long-run economic change.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF8F5;--text:#2A2520;--text2:#6B6158;--accent:#3D3328;--gold:#A68B5B;--border:#DDD7CE;--card:#FFF;--sidebar-bg:rgba(250,248,245,.95);--font-d:'Cormorant Garamond',Georgia,serif;--font-b:'Source Sans 3','Segoe UI',sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161310;--text:#E8E0D6;--text2:#A89C8E;--accent:#C4A97A;--gold:#C4A97A;--border:#342E27;--card:#1C1915;--sidebar-bg:rgba(22,19,16,.95)}}
+:root[data-theme="dark"]{--bg:#161310;--text:#E8E0D6;--text2:#A89C8E;--accent:#C4A97A;--gold:#C4A97A;--border:#342E27;--card:#1C1915;--sidebar-bg:rgba(22,19,16,.95)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;height:100%}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;min-height:100%}
+.wrapper{display:flex;min-height:100vh}
+.sidebar{width:280px;flex-shrink:0;background:var(--sidebar-bg);border-right:1px solid var(--border);padding:48px 28px 32px;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+.sidebar-photo{width:160px;height:200px;object-fit:cover;border-radius:4px;margin:0 auto 20px;display:block;border:1px solid var(--border)}
+.sidebar-name{font-family:var(--font-d);font-size:26px;font-weight:600;text-align:center;color:var(--text);margin-bottom:4px}
+.sidebar-title{font-size:14px;color:var(--text2);text-align:center;margin-bottom:20px;line-height:1.5}
+.sidebar-info{font-size:13.5px;color:var(--text2);margin-bottom:24px;line-height:1.8}
+.sidebar-info a{color:var(--gold);text-decoration:none}
+.sidebar-info a:hover{text-decoration:underline}
+.sidebar-nav{list-style:none;margin-top:auto}
+.sidebar-nav li{margin-bottom:6px}
+.sidebar-nav a{font-size:14px;font-weight:500;color:var(--text2);text-decoration:none;transition:color .2s}
+.sidebar-nav a:hover{color:var(--gold)}
+.content{flex:1;min-width:0}
+.banner{width:100%;height:280px;background-image:url('images/background.png');background-size:cover;background-position:center 35%;position:relative}
+.banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,var(--bg))}
+.main{max-width:740px;padding:32px 48px 60px}
+section{margin-bottom:40px}
+.section-title{font-family:var(--font-d);font-size:24px;font-weight:600;color:var(--text);margin-bottom:18px;padding-bottom:6px;border-bottom:1.5px solid var(--gold);display:inline-block}
+.bio{font-size:16px;color:var(--text2);line-height:1.8;max-width:620px}
+.bio strong{color:var(--text)}
+.paper{margin-bottom:20px;padding-left:14px;border-left:2px solid var(--border);transition:border-color .2s}
+.paper:hover{border-left-color:var(--gold)}
+.paper-title{font-family:var(--font-d);font-size:17.5px;font-weight:600;line-height:1.4;color:var(--text);margin-bottom:3px}
+.paper-meta{font-size:14px;color:var(--text2);font-style:italic;margin-bottom:4px}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:3px;letter-spacing:.02em}
+.tag-jmp{background:var(--accent);color:#F5F0E8}
+.tag-rr{background:var(--gold);color:#fff}
+.tag-pub{background:#4A7A5C;color:#fff}
+.tag-wp{background:var(--bg);color:var(--text2);border:1px solid var(--border)}
+.tag-wip{background:var(--bg);color:var(--text2);border:1px solid var(--border)}
+.subsection{font-family:var(--font-d);font-size:18px;font-weight:500;color:var(--gold);margin:28px 0 14px;font-style:italic}
+.teach-row{display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px solid var(--border);gap:12px;font-size:15px}
+.teach-row:last-child{border-bottom:none}
+.teach-course{color:var(--text);flex:1}
+.teach-year{color:var(--text2);white-space:nowrap;font-size:14px}
+.pres-year{font-family:var(--font-d);font-size:17px;font-weight:600;color:var(--gold);margin-top:14px;margin-bottom:4px}
+.pres-list{font-size:15px;color:var(--text2);line-height:1.8}
+.edu-item{margin-bottom:14px}
+.edu-degree{font-size:15.5px;font-weight:600;color:var(--text)}
+.edu-school{font-size:14.5px;color:var(--text2)}
+.edu-year{font-size:13.5px;color:var(--gold)}
+footer{padding:32px 48px;border-top:1px solid var(--border);font-size:13px;color:var(--text2)}
+@media(max-width:768px){
+.wrapper{flex-direction:column}
+.sidebar{width:100%;height:auto;position:static;padding:32px 24px 24px;border-right:none;border-bottom:1px solid var(--border);flex-direction:row;flex-wrap:wrap;align-items:center;gap:16px}
+.sidebar-photo{width:90px;height:112px;margin:0}
+.sidebar-name,.sidebar-title{text-align:left}
+.sidebar-nav{width:100%;display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.sidebar-nav li{margin-bottom:0}
+.banner{height:180px}
+.main{padding:24px 20px 40px}
+footer{padding:24px 20px}
+.teach-row{flex-direction:column;gap:1px}
+}
+@media print{.sidebar{display:none}.banner{display:none}.main{padding:20px}}
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<aside class="sidebar">
+  <img class="sidebar-photo" src="images/Wanda Wang photo.jpg" alt="Wanda Wang">
+  <div>
+    <div class="sidebar-name">Wanda Wang</div>
+    <div class="sidebar-title">Ph.D. Candidate in Finance<br>HKU Business School</div>
+  </div>
+  <div class="sidebar-info">
+    K. K. Leung Building<br>
+    Pokfulam Road, Hong Kong<br><br>
+    <a href="mailto:wang422@connect.hku.hk">wang422@connect.hku.hk</a><br>
+    <a href="files/CV_Wanda_Wang.pdf">Download CV</a>
+  </div>
+  <ul class="sidebar-nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#presentations">Presentations</a></li>
+    <li><a href="#education">Education</a></li>
+  </ul>
+</aside>
+
+<div class="content">
+<div class="banner"></div>
+<div class="main">
+
+<section id="about">
+  <h2 class="section-title">About</h2>
+  <p class="bio">I am a Ph.D. candidate in Finance at HKU Business School, The University of Hong Kong. I study the historical origins of financial development, political economy, and long-run economic change, with a focus on modern China. My research combines newly digitized archival data with econometric methods to understand how institutions, trade, and politics have shaped financial systems over time.</p>
+  <p class="bio" style="margin-top:12px"><strong>I will be on the 2026–2027 academic job market.</strong></p>
+</section>
+
+<section id="research">
+  <h2 class="section-title">Research</h2>
+  <div class="subsection">Job Market Paper</div>
+  <div class="paper">
+    <div class="paper-title">Removing Internal Trade Barriers and Financial Development: Evidence from China in the 1930s</div>
+    <div><span class="tag tag-jmp">Job Market Paper</span></div>
+  </div>
+  <div class="subsection">Published &amp; Under Revision</div>
+  <div class="paper">
+    <div class="paper-title">Reversal of Neolithic Fortunes: Trade Opening and the Durable Reordering of China's Economic Geography</div>
+    <div class="paper-meta">with Zhiwu Chen</div>
+    <div><span class="tag tag-rr">Revise &amp; Resubmit, The Journal of Economic History</span></div>
+  </div>
+  <div class="paper">
+    <div class="paper-title">Steam Beyond the Gateways: Steamship Connectivity and Industrial Entry in China</div>
+    <div><span class="tag tag-rr">Revise &amp; Resubmit, European Review of Economic History</span></div>
+  </div>
+  <div class="paper">
+    <div class="paper-title">Stature Reveals Changing Patterns of the Biological Standard of Living in Europe and Asia over the Past 7,000 Years</div>
+    <div class="paper-meta">with Joerg Baten et al.</div>
+    <div><span class="tag tag-pub">Forthcoming, Proceedings of the National Academy of Sciences</span></div>
+  </div>
+  <div class="paper">
+    <div class="paper-title">Different Institutions, Different Finance: Evidence from Early Twentieth-Century China</div>
+    <div><span class="tag tag-pub">Economics Letters 268 (2026): 113216</span></div>
+  </div>
+  <div class="subsection">Working Papers</div>
+  <div class="paper">
+    <div class="paper-title">Financial Crisis and Political Change: China in 1910</div>
+    <div class="paper-meta">with Chen Lin and Chicheng Ma</div>
+    <div><span class="tag tag-wp">Working Paper</span></div>
+  </div>
+  <div class="paper">
+    <div class="paper-title">Bonds of Love: Patriotism and the Rise of Modern Banks</div>
+    <div class="paper-meta">with Yuchen Sun and Yuchen Xu</div>
+    <div><span class="tag tag-wp">Working Paper</span></div>
+  </div>
+  <div class="subsection">Work in Progress</div>
+  <div class="paper">
+    <div class="paper-title">Finance and Innovation in the Long Run</div>
+    <div class="paper-meta">with Chen Lin and Chicheng Ma</div>
+    <div><span class="tag tag-wip">In Progress</span></div>
+  </div>
+  <div class="paper">
+    <div class="paper-title">War and the Rise of Civilization in China, 8000–221 BCE</div>
+    <div class="paper-meta">with Zhiwu Chen and Peter Turchin</div>
+    <div><span class="tag tag-wip">In Progress</span></div>
+  </div>
+</section>
+
+<section id="teaching">
+  <h2 class="section-title">Teaching</h2>
+  <div class="subsection">Guest Lecturer</div>
+  <div class="teach-row"><span class="teach-course">ECON6060 Development Economics (MSc)</span><span class="teach-year">2024</span></div>
+  <div class="teach-row"><span class="teach-course">ECON2273 Economic History of China (Undergraduate)</span><span class="teach-year">2023</span></div>
+  <div class="subsection">Teaching Assistant</div>
+  <div class="teach-row"><span class="teach-course">DBAP7048 Research Methods in Finance, Economics, and Accounting (DBA)</span><span class="teach-year">2026</span></div>
+  <div class="teach-row"><span class="teach-course">DBAP7015 Global Financial Innovation (DBA)</span><span class="teach-year">2026</span></div>
+  <div class="teach-row"><span class="teach-course">DBAP7017 Frontiers in Economics and Accounting Research (DBA)</span><span class="teach-year">2021</span></div>
+  <div class="teach-row"><span class="teach-course">EMBA6608 Financial Innovation and Credit Market (EMBA)</span><span class="teach-year">2026</span></div>
+  <div class="teach-row"><span class="teach-course">EMBA7613 Current Topics in Economic Development (EMBA)</span><span class="teach-year">2021</span></div>
+  <div class="teach-row"><span class="teach-course">ECON6069 Advanced Topics in Economic Policy (MSc)</span><span class="teach-year">2023–2024</span></div>
+  <div class="teach-row"><span class="teach-course">ECON6068 Advanced Topics in Applied Econometrics (MSc)</span><span class="teach-year">2024</span></div>
+  <div class="teach-row"><span class="teach-course">ECON6060 Development Economics (MSc)</span><span class="teach-year">2023</span></div>
+  <div class="teach-row"><span class="teach-course">CCHU9069 Economic Logic of Civilizations (Undergraduate)</span><span class="teach-year">2025</span></div>
+</section>
+
+<section id="presentations">
+  <h2 class="section-title">Presentations</h2>
+  <div class="pres-year">2027</div>
+  <div class="pres-list">Cliometric Society Session, Allied Social Science Associations Annual Meeting (Washington, scheduled)</div>
+  <div class="pres-year">2026</div>
+  <div class="pres-list">Economic History Society Annual Meeting (London) · AsianFA Annual Conference (Seoul) · China International Conference in Economics (Beijing) · Symposium on Quantitative History (Wuhan) · Quantitative History Webinar · Workshop on Early China Development and Its Long-term Impact (HKU)</div>
+  <div class="pres-year">2025</div>
+  <div class="pres-list">American Economic Association Annual Meeting (San Francisco) · Economic History Association Annual Meeting (Philadelphia) · World Economic History Congress (Lund) · Workshop on Chinese and Comparative Economic History (Oxford) · CAGE-AMES Workshop (Warwick) · Financial History Workshop (HKU) · Economic History Workshop (PKU-THU joint)</div>
+  <div class="pres-year">2024</div>
+  <div class="pres-list">Economic History Association Annual Meeting (Sacramento) · Asian Historical Economics Conference (Hong Kong) · Symposium on Quantitative History (SJU) · China Economic Society Annual Conference (ZJU) · AsianFA Annual Conference (Macau) · Applied Economics Workshop, National University of Singapore</div>
+</section>
+
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="edu-item"><div class="edu-degree">Ph.D. in Finance</div><div class="edu-school">University of Hong Kong</div><div class="edu-year">2021–2027</div></div>
+  <div class="edu-item"><div class="edu-degree">Visiting Ph.D. Student in Economics</div><div class="edu-school">University of Warwick</div><div class="edu-year">Apr–Aug 2025</div></div>
+  <div class="edu-item"><div class="edu-degree">Bachelor of Economics and Finance, First Class Honours</div><div class="edu-school">University of Hong Kong</div><div class="edu-year">2015–2020</div></div>
+</section>
+
+</div>
+<footer>&copy; 2026 Wanda Wang</footer>
+</div>
+</div>
+</body>
+</html>
